@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 
 class TwitterClient(object):
 	def __init__(self):
-		consumer_key = '9xhDXeOzwsZ0dpuzV2q76yzSE'
-		consumer_secret = 'lxdQ3rtVKEHEMDiflBETQWqXKHRYJj3gQeS28NCHKx2V8zzx8R'
-		access_token = '1082249754472374272-C8CWU3h6zNZrTjavuw6bRBUZiE7buU'
-		access_token_secret = '5iKhHg7cCZ7r3N3n3f2wesQY0VYwSJ86BD4Erck1WTJAU'
+		consumer_key = '##########'  #Enter your cousumer key
+		consumer_secret = '###############'  #Enter your secret key
+		access_token = '#############################' #Enter your access token key
+		access_token_secret ='####################' #Enter your access_token_secret key 
 
 		try:
 			# create OAuthHandler object
@@ -117,18 +117,6 @@ def main():
 	else:
 		output = "Neutral"
 	plotPieChart(pres, nres, neures, output, query, count)
-
-
-# printing first 5 positive tweets
-	#print("\n\nPositive tweets:")
-	#for tweet in ptweets[:10]:
-	#	print(tweet['text'])
-
-	# printing first 5 negative tweets
-	#print("\n\nNegative tweets:")
-	#for tweet in ntweets[:10]:
-	#	print(tweet['text'])
-
 
 if __name__ == "__main__":
 	# calling main function
